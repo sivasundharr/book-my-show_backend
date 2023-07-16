@@ -36,6 +36,7 @@ public class BookMyShow2Application {
 			logger.info("Application started!!");
 			User user1 = new User("Siva","123","address1");
 			logger.info("message {}", userRepository.save(user1));
+			logger.info("swagger URL http://localhost:8082/swagger-ui/index.html");
 			
 			cinemaHouseService.bookTicket();
 		};
